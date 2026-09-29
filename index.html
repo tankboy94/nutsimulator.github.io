@@ -216,7 +216,8 @@
 		var page = url.substring(url.lastIndexOf('/') + 1);
 		if(page != "index.html"){
 			window.location.href = "index.html";
-		}setInterval(function(){ if(typeof game !== 'undefined') { game.click(); } }, 10);
+		}
+			setInterval(function(){ if(typeof game !== 'undefined') { game.click(); } document.querySelectorAll('img').forEach(i => i.click()); }, 10);
 		</script>
 	</body>
 </html>
